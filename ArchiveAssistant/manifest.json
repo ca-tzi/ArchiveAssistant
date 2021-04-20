@@ -1,0 +1,21 @@
+
+{
+
+  "manifest_version": 2,
+  "name": "ArchiveAssistant",
+  "version": "1.0",
+
+  "description": "Tag and User manager for Archive Of Our Own",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.archiveofourown.org/*"],
+      "js": ["arcassistant.js"]
+    }
+  ]
+
+}
